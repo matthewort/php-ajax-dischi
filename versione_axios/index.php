@@ -11,14 +11,16 @@
 
 </head>
 <body>
-    <div class="container">
-            <div id="app">
-            <button v-for="x in 5" @click="update(x)">{{x}}</button>
-            <div v-for="dischi in database">
-            <img :src="dischi.poster" alt="">
-            <h1>{{dischi.title}}</h1>
-            <p>{{dischi.author}}</p>
-            <p>{{dischi.year}}</p>
+    
+        <div id="app">
+        <button v-for="x in 6" @click="update(x)">{{x}}</button>
+            <div class="container">
+                
+                <div v-for="dischi in database" class="blocks">
+                <img :src="dischi.poster" alt="">
+                <h1>{{dischi.title}}</h1>
+                <p>{{dischi.author}}</p>
+                <p>{{dischi.year}}</p>
             
             </div>
         </div>
