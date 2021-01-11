@@ -18,7 +18,6 @@
     
 <div id="app">
         
-
             <?php
 
             foreach ($database as $k => $databases) { ?>
@@ -36,11 +35,7 @@
             }
 
             ?>
-            
-           
-        
-        </div>
-    </div>
+             
 </div>
 
 
