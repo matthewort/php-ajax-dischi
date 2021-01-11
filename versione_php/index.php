@@ -17,21 +17,17 @@
 </head>
 <body>
 
-    <?php
+<div class="container"> 
+    <?php foreach ($database as $k => $databases) { ?>    
+            <div class="blocks">
+                <img src="<?php echo $databases["poster"]?>" alt="">
+                <h1><?php echo $databases["title"]?></h1>
+                <p><?php echo $databases["author"]?></p>
+                <p><?php echo $databases["year"]?></p>
+            </div>
+    <?php } ?>
+</div>
 
-    foreach ($database as $k => $databases) { ?>
-    <div class="container"> 
-    <div class="blocks">
-    <img src="<?php echo $databases["poster"]?>" alt="">
-    <h1><?php echo $databases["title"]?></h1>
-    <p><?php echo $databases["author"]?></p>
-    <p><?php echo $databases["year"]?></p>
-        </div>
-        </div>
-        <?php
-    }
-
-    ?>
 
 </body>
 </html>
